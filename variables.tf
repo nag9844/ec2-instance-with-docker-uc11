@@ -22,8 +22,8 @@ variable "ami_id" {
   default     = "ami-0f918f7e67a3323f0" 
 }
 
-variable "security_group" {
-  description = "security group id"
-  type        = list(string)
-  default     = ["sg-042c3bb8f3b9be6b6"]
+variable "vpc_id" {
+  description = "vpc id"
+  type        = string
+  default     = "vpc-0501d0766a11b8f21"
 }
