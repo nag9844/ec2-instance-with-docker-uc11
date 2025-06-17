@@ -20,6 +20,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [aws_instance.web_server](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
+| [aws_security_group.web_sg](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 
 ## Inputs
 
@@ -29,7 +30,7 @@ No modules.
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | AWS region to deploy resources | `string` | `"ap-south-1"` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | EC2 instance type | `string` | `"t3.medium"` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | Name of the SSH key pair to use for EC2 instances | `string` | `"demo-key"` | no |
-| <a name="input_security_group"></a> [security\_group](#input\_security\_group) | security group id | `list(string)` | <pre>[<br>  "sg-042c3bb8f3b9be6b6"<br>]</pre> | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | vpc id | `string` | `"vpc-0501d0766a11b8f21"` | no |
 
 ## Outputs
 
